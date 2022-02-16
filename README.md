@@ -7,24 +7,26 @@ like the definitely-not-robot you are.
 
 > Oh yeah? Could a robot do _**this?**_
 
+**Code modifications based off of [ghost-cursor](https://github.com/Xetera/ghost-cursor) package**
+
 ## Installation
 
 ```sh
-yarn add ghost-cursor
+yarn add @aw1875/ghost-cursor
 ```
 
 or with npm
 
 ```sh
-npm install ghost-cursor
+npm install @aw1875/ghost-cursor
 ```
 
 ## Usage
 
-Generating movement data between 2 coordinates.
+Generating movement data between 2 coordinates with associated timestamps.
 
 ```js
-import { path } from "ghost-cursor";
+import { path } from "@aw1875/ghost-cursor";
 
 const from = { x: 100, y: 100 };
 const to = { x: 600, y: 700 };
@@ -46,7 +48,7 @@ const route = path(from, to);
 Usage with puppeteer:
 
 ```js
-import { createCursor } from "ghost-cursor";
+import { createCursor } from "@aw1875/ghost-cursor";
 import puppeteer from "puppeteer";
 
 const run = async (url) => {
