@@ -6,10 +6,8 @@
   "main": "lib/spoof.js",
   "types": "lib/spoof.d.ts",
   "scripts": {
-    "prepare": "husky install && yarn lint && yarn build",
-    "build": "tsc",
-    "lint": "yarn ts-standard --fix",
-    "test": "exit 0"
+    "prepare": "npm run build",
+    "build": "tsc"
   },
   "keywords": [
     "bezier-curve",
